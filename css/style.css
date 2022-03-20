@@ -23,10 +23,12 @@ html {
   grid-row: 1/-1; }
 
 .header {
-  background-color: #126782; }
+  background-color: #126782;
+  grid-column: full-start / col-end 6; }
 
 .realtors {
-  background-color: #8ECAE6; }
+  background-color: #8ECAE6;
+  grid-column: col-start 7 / full-end; }
 
 .features {
   background-color: green;
