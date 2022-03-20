@@ -31,8 +31,11 @@ html {
   grid-column: col-start 7 / full-end; }
 
 .features {
-  background-color: green;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(3, 1fr); }
 
 .story__pictures {
   background-color: #219EBC;
