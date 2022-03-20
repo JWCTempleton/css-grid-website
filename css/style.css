@@ -29,7 +29,8 @@ html {
   background-color: #8ECAE6; }
 
 .features {
-  background-color: green; }
+  background-color: green;
+  grid-column: center-start / center-end; }
 
 .story__pictures {
   background-color: #219EBC; }
@@ -38,10 +39,13 @@ html {
   background-color: #8ECAE6; }
 
 .homes {
-  background-color: #023047; }
+  background-color: #023047;
+  grid-column: center-start / center-end; }
 
 .gallery {
-  background-color: #219EBC; }
+  background-color: #219EBC;
+  grid-column: full-start / full-end; }
 
 .footer {
-  background-color: #023047; }
+  background-color: #023047;
+  grid-column: full-start / full-end; }
