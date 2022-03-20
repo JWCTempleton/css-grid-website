@@ -35,10 +35,12 @@ html {
   grid-column: center-start / center-end; }
 
 .story__pictures {
-  background-color: #219EBC; }
+  background-color: #219EBC;
+  grid-column: full-start / col-end 4; }
 
 .story__content {
-  background-color: #8ECAE6; }
+  background-color: #8ECAE6;
+  grid-column: col-start 5 / full-end; }
 
 .homes {
   background-color: #023047;
