@@ -11,3 +11,30 @@ html {
   color: #FB8500;
   font-weight: 300;
   line-height: 1.6; }
+
+.sidebar {
+  background-color: #219EBC; }
+
+.header {
+  background-color: #126782; }
+
+.realtors {
+  background-color: #8ECAE6; }
+
+.features {
+  background-color: green; }
+
+.story__pictures {
+  background-color: #219EBC; }
+
+.story__content {
+  background-color: #8ECAE6; }
+
+.homes {
+  background-color: #023047; }
+
+.gallery {
+  background-color: #219EBC; }
+
+.footer {
+  background-color: #023047; }
