@@ -17,14 +17,48 @@ html {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
-.heading-4 {
+.heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
+
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic; }
+  .heading-2--dark {
+    color: #FB8500; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #FB8500;
+  text-transform: uppercase; }
 
 .heading-4 {
   font-size: 1.9rem; }
   .heading-4--dark {
     color: #023047; }
+
+.btn {
+  background-color: #219EBC;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1.8rem 2.8rem;
+  transition: all .3s; }
+  .btn:hover {
+    background-color: #126782;
+    box-shadow: 0.2rem 0.9rem 1.3rem rgba(0, 0, 0, 0.4); }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
 
 .sidebar {
   background-color: #219EBC;
@@ -67,8 +101,18 @@ html {
   grid-column: full-start / col-end 4; }
 
 .story__content {
-  background-color: #8ECAE6;
-  grid-column: col-start 5 / full-end; }
+  background-color: #126782;
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+
+.story__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #FD9E02; }
 
 .homes {
   background-color: #023047;
