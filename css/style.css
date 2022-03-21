@@ -98,12 +98,21 @@ html {
 
 .story__pictures {
   background-color: #219EBC;
-  grid-column: full-start / col-end 4; }
+  grid-column: full-start / col-end 4;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center; }
+
+.story__picture {
+  width: 50%;
+  grid-row: 2/8;
+  grid-column: 2/8; }
 
 .story__content {
   background-color: #126782;
   grid-column: col-start 5 / full-end;
-  padding: 6rem 12rem;
+  padding: 6rem 7.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
