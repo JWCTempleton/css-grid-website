@@ -124,8 +124,14 @@ html {
   color: #FD9E02; }
 
 .homes {
-  background-color: #023047;
-  grid-column: center-start / center-end; }
+  margin: 15rem 0;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+
+.home {
+  background-color: green; }
 
 .gallery {
   background-color: #219EBC;
