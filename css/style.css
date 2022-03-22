@@ -132,6 +132,8 @@ html {
 
 .home {
   background-color: green; }
+  .home__img {
+    width: 100%; }
 
 .gallery {
   background-color: #219EBC;

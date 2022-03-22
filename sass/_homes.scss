@@ -9,4 +9,8 @@
 
 .home {
     background-color: green;
+
+    &__img {
+        width: 100%;
+    }
 }
