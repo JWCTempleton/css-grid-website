@@ -131,7 +131,9 @@ html {
   grid-gap: 7rem; }
 
 .home {
-  background-color: green; }
+  background-color: #f9f7f6;
+  border-radius: .5rem;
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.4); }
   .home__img {
     width: 100%; }
   .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
