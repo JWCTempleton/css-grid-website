@@ -133,13 +133,21 @@ html {
 .home {
   background-color: #f9f7f6;
   border-radius: .5rem;
-  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
   .home__img {
-    width: 100%; }
+    width: 100%;
+    grid-column: 1/-1; }
+  .home__name {
+    grid-column: 1/-1; }
   .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
     fill: #219EBC;
     height: 2rem;
     width: 2rem; }
+  .home__btn {
+    grid-column: 1/-1; }
 
 .gallery {
   background-color: #219EBC;

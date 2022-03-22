@@ -11,9 +11,15 @@
     background-color: $color-grey-light-1;
     border-radius: .5rem;
     box-shadow: 1rem 2rem 3rem rgba(0,0,0, .4);
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     &__img {
         width: 100%;
+        grid-column: 1/-1;
+        
     }
 
     &__like {
@@ -21,6 +27,7 @@
     }
 
     &__name {
+        grid-column: 1/-1;
 
     }
 
@@ -38,5 +45,9 @@
         p {
 
         }
+    }
+
+    &__btn {
+        grid-column: 1/-1;
     }
 }
