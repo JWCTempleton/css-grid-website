@@ -25,11 +25,11 @@ html {
   font-size: 4rem;
   font-style: italic; }
   .heading-2--dark {
-    color: #FB8500; }
+    color: #FD9E02; }
 
 .heading-3 {
   font-size: 1.6rem;
-  color: #FB8500;
+  color: #FD9E02;
   text-transform: uppercase; }
 
 .heading-4 {
@@ -38,7 +38,7 @@ html {
     color: #023047; }
 
 .btn {
-  background-color: #219EBC;
+  background-color: #023047;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -48,7 +48,7 @@ html {
   padding: 1.8rem 2.8rem;
   transition: all .3s; }
   .btn:hover {
-    background-color: #126782;
+    background-color: #022638;
     box-shadow: 0.2rem 0.9rem 1.3rem rgba(0, 0, 0, 0.4); }
 
 .mb-sm {
@@ -110,7 +110,7 @@ html {
   grid-column: 2/8; }
 
 .story__content {
-  background-color: #126782;
+  background-color: #219EBC;
   grid-column: col-start 5 / full-end;
   padding: 6rem 7.5vw;
   display: flex;
@@ -121,7 +121,7 @@ html {
 .story__text {
   font-size: 1.5rem;
   font-style: italic;
-  color: #FD9E02; }
+  color: #fff; }
 
 .homes {
   margin: 15rem 0;
@@ -170,6 +170,7 @@ html {
   .home__location, .home__rooms {
     margin-top: 2.5rem; }
   .home__location, .home__rooms, .home__area, .home__price {
+    color: #FB8500;
     display: flex;
     align-items: center;
     font-size: 1.5rem;
@@ -181,7 +182,8 @@ html {
       margin-right: 1rem; }
   .home__btn {
     border-radius: 0;
-    grid-column: 1/-1; }
+    grid-column: 1/-1;
+    background-color: #219EBC; }
 
 .gallery {
   background-color: #219EBC;

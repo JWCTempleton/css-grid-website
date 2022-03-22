@@ -9,14 +9,14 @@
     font-style: italic;
 
     &--dark {
-        color: $color-orange-dark;
+        color: $color-orange;
     }
 }
 
 .heading-3 {
     @extend %heading;
     font-size: 1.6rem;
-    color: $color-orange-dark;
+    color: $color-orange;
     text-transform: uppercase;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .btn {
-    background-color: $color-primary;
+    background-color: $color-secondary;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -41,7 +41,7 @@
     transition: all .3s;
 
     &:hover {
-        background-color: $color-primary-dark;
+        background-color: darken($color-secondary, 3%);
         box-shadow: .2rem .9rem 1.3rem rgba(#000, .4);
     }
 }
