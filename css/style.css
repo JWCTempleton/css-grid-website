@@ -65,6 +65,19 @@ html {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1/-1; }
 
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem; }
+  .nav-btn::before, .nav-btn::after {
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    content: "";
+    display: block; }
+
 .header {
   background-color: #126782;
   grid-column: full-start / col-end 6; }
@@ -250,7 +263,8 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   column-gap: 2rem;
-  align-items: center; }
+  align-items: center;
+  margin: 0 auto; }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
     color: #fff;
