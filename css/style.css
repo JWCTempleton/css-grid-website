@@ -17,9 +17,13 @@ html {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
-.heading-2, .heading-3, .heading-4 {
+.heading-1, .heading-2, .heading-3, .heading-4, .header__heading-3 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #fff; }
 
 .heading-2 {
   font-size: 4rem;
@@ -87,7 +91,28 @@ html {
 
 .header {
   background-color: #126782;
-  grid-column: full-start / col-end 6; }
+  background-image: linear-gradient(rgba(2, 48, 71, 0.93), rgba(2, 48, 71, 0.93)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6rem;
+  grid-column: full-start / col-end 6;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  row-gap: 2.5rem;
+  justify-content: center; }
+  .header__logo {
+    height: 4rem;
+    justify-self: center; }
+  .header__btn {
+    align-self: start;
+    justify-self: start;
+    background-color: #219EBC;
+    border-radius: 0; }
+  .header__heading-3 {
+    font-size: 2.6rem;
+    border-bottom: 1px solid #219EBC;
+    padding-bottom: 2rem; }
 
 .realtors {
   background-color: #8ECAE6;
