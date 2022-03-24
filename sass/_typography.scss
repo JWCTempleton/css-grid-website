@@ -33,6 +33,11 @@
     &--dark {
         color: $color-secondary;
     }
+
+    &--light {
+        color: $color-orange;
+        margin-bottom: .6rem;
+    }
 }
 
 .btn {
