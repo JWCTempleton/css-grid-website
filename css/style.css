@@ -30,7 +30,7 @@ body {
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content 40vw repeat(3, min-content); } }
+      grid-template-rows: 6rem calc(100vh - 6rem); } }
 
 .heading-1, .heading-2, .heading-3, .heading-4, .header__heading-3 {
   font-family: "Josefin Sans", sans-serif;
@@ -136,6 +136,9 @@ body {
   @media only screen and (max-width: 50em) {
     .header {
       grid-column: 1/-1; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 5rem; } }
   .header__logo {
     height: 6rem;
     justify-self: center; }
@@ -170,6 +173,9 @@ body {
     @media only screen and (max-width: 50em) {
       .realtors__list {
         grid-template-columns: repeat(3, min-content max-content); } }
+    @media only screen and (max-width: 37.5em) {
+      .realtors__list {
+        grid-template-columns: min-content max-content; } }
   .realtors__img {
     width: 9rem;
     height: 9rem;
@@ -177,6 +183,14 @@ body {
     display: block;
     object-fit: cover;
     object-position: center top; }
+    @media only screen and (max-width: 50em) {
+      .realtors__img {
+        width: 6.5rem;
+        height: 6.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .realtors__img {
+        height: 9rem;
+        width: 9rem; } }
   .realtors__sold {
     text-transform: uppercase;
     color: #aaa;
@@ -212,6 +226,9 @@ body {
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(8, 1fr);
   align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .story__pictures {
+      display: none; } }
 
 .story__picture {
   width: 50%;
@@ -226,11 +243,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; }
+  @media only screen and (max-width: 50em) {
+    .story__content {
+      background-color: #fff;
+      grid-column: 1/-1;
+      grid-row: 5/6;
+      width: 100%;
+      justify-self: center;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      padding-bottom: -10rem; } }
 
 .story__text {
   font-size: 1.5rem;
   font-style: italic;
   color: #fff; }
+  @media only screen and (max-width: 50em) {
+    .story__text {
+      width: 50%;
+      text-align: center;
+      display: none;
+      margin-bottom: -10rem; } }
 
 .homes {
   margin: 15rem 0;

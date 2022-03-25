@@ -25,6 +25,10 @@
             grid-template-columns: repeat(3, min-content max-content);
     
         }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__img {
@@ -34,6 +38,16 @@
         display: block;
         object-fit: cover;
         object-position: center top;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 6.5rem;
+            height: 6.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            height: 9rem;
+            width: 9rem;
+        }
     }
 
     &__sold {
