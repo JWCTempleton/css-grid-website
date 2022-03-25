@@ -19,12 +19,11 @@ $font-display: 'Josefin Sans', sans-serif;
 
 //RESPONSIVE BREAKPOINTS
 $bp-largest: 75em;  // 1200px
-$bp-large: 62.5em // 1000px
+$bp-large: 62.5em; // 1000px
 
 
 
-*,
-*::before,
+*, *::before,
 *::after {
     margin: 0;
     padding: 0;
@@ -54,6 +53,15 @@ body {
 .container {
     display: grid;
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+
     //The two additional 1fr columns center the content elements in the center of the page
     grid-template-columns: [sidebar-start]8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)  [full-end]; // max for each column will be 14rem but never smaller than the min content
+
+    @media only screen and (max-width: $bp-large) {
+        display: grid;
+        grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+
+        //The two additional 1fr columns center the content elements in the center of the page
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)  [full-end]; 
+    }
 }
